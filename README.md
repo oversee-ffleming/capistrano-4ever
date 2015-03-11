@@ -6,6 +6,8 @@ The gem is named 'capistrano-4ever', as 'capistrano-forever' was taken (thus,
 perhaps, rendering this gem redundant).  In any case, this gem namespaces under
 'forever' instead of '4ever', and so the two gems are incompatible.
 
+[Available via RubyGems](https://rubygems.org/gems/capistrano-4ever)
+
 ## Installation
 
 Add this line to your application's Gemfile:
