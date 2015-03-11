@@ -15,6 +15,7 @@ namespace :forever do
     release_path
   end
 
+  desc 'Checks to see that forever is installed globally on the target machines'
   task :check do
     on roles :app do
       exists = test("[ -f #{fetch(:forever_path, default_forever_path)} ]")
@@ -28,6 +29,7 @@ namespace :forever do
     end
   end
 
+  desc 'Starts the server process via forever'
   task :start do
     on roles :app do
       within fetch(:forever_target_path, default_target_path) do
@@ -38,6 +40,7 @@ namespace :forever do
     end
   end
 
+  desc 'Stops the server process via forever'
   task :stop do
     on roles :app do
       within fetch(:forever_target_path, default_target_path) do
@@ -53,6 +56,7 @@ namespace :forever do
     end
   end
 
+  desc 'Restarts the server process via forever'
   task :restart do
     on roles :app do
       invoke 'forever:stop'
@@ -60,6 +64,7 @@ namespace :forever do
     end
   end
 
+  desc 'Stops all server processes managed by forever'
   task :stop_all do
     on roles :app do
       within fetch(:forever_target_path, default_target_path) do
@@ -70,6 +75,7 @@ namespace :forever do
     end
   end
 
+  desc 'Restarts all server processes managed by forever'
   task :restart_all do
     on roles :app do
       within fetch(:forever_target_path, default_target_path) do
