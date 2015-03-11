@@ -1,13 +1,17 @@
-# capistrano-forever
+# capistrano-4ever
 
-This gem provides some Capistrano3 tasks for deploying NodeJS servers using the npm package Forever to make sure that that application runs forever.
+This gem provides some Capistrano3 tasks for deploying NodeJS servers using the
+npm package Forever to make sure that that application runs forever.
+The gem is named 'capistrano-4ever', as 'capistrano-forever' was taken (thus,
+perhaps, rendering this gem redundant).  In any case, this gem namespaces under
+'forever' instead of '4ever', and so the two gems are incompatible.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'capistrano-forever'
+gem 'capistrano-4ever'
 ```
 
 And then execute:
@@ -16,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    % gem install capistrano-forever
+    % gem install capistrano-4ever
 
 ## Usage
 

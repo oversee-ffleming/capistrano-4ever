@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'capistrano/forever/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "capistrano-forever"
+  spec.name          = "capistrano-4ever"
   spec.version       = Capistrano::Forever::VERSION
   spec.authors       = ["Forrest Fleming"]
   spec.email         = ["ffleming@oversee.net"]
