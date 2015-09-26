@@ -37,7 +37,7 @@ require 'capistrano/forever'
 `:forever_app` : The application you're deploying.<br>
 `:forever_target_path` : The target path.  Defaults to Capistrano's `release_path`.  I recommend that you don't set this.<br>
 `:forever_flags` : Flags to pass to the forever binary as a string.
-  * NB: **Order is important** here!  Ape the order in the example below or play around, but don't be frustrated if something that seems like it should work doesn't.  This is due to how the foreman binary parses options.
+  * NB: **Order is important** here!  Ape the order in the example below or play around, but don't be frustrated if something that seems like it should work doesn't.  This is due to how the forever binary parses options.
 
 ### Configuration defaults
 Configuration symbol | Default
